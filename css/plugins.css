@@ -1,0 +1,202 @@
+/*==================================================
+   TOC:
+   a. Fonts
+   b. Header
+   c. About
+   d. Resume
+   e. Projects
+   f. Contacts
+   g. Footer
+   h. Theme Toggle
+/*==================================================*/
+
+/* ------------------------------------------------------------------ */
+/* a. Fonts
+/* ------------------------------------------------------------------ */
+/*@font-face {
+	font-family: 'Lilita';
+	src: url(../files/fonts/LilitaOne.ttf);
+}
+@font-face {
+	font-family: 'Nougat';
+	src: url(../files/fonts/Nougat.ttf);
+}*/
+
+/* ------------------------------------------------------------------ */
+/* b. Header
+/* ------------------------------------------------------------------ */
+.header .social {
+	margin: 20px 0;
+	padding: 0;
+	font-size: 25px;
+}
+.header .social li {
+	display: inline-block;
+	margin: 0 15px;
+	padding: 0;
+	overflow: hidden;
+}
+header .social li a {
+	color: rgb(177, 255, 255);
+}
+header .social li a:hover {
+	color: rgb(123, 179, 179);
+}
+.header .social li .fa-linkedin {
+	animation: 2s lineUp linear;
+}
+.header .social li .fa-github {
+	animation: 2s lineRight linear;
+}
+.header .social li .fa-envelope {
+	animation: 2s lineLeft linear;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. About
+/* ------------------------------------------------------------------ */
+.about-content img {
+	width: 40px;
+	margin-right: 10px;
+}
+.about-content img:hover {
+	width: 43px;
+	margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Resume
+/* ------------------------------------------------------------------ */
+.resume .work-icon,
+.resume .vol-icon,
+.resume .edu-icon {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: rgb(206, 206, 206);
+	border-radius: 50%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	position: absolute;
+	left: 35%;
+	top: .8rem;
+	margin-left: -2.4rem;
+}
+.resume #current-job,
+.resume #current-edu {
+	background: rgb(71, 203, 155);
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Projects
+/* ------------------------------------------------------------------ */
+.projects .box .proj-icons {
+	margin: 20px 0;
+	padding: 0;
+	font-size: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	word-spacing: 20px;
+}
+.projects .box li {
+	display: inline-block;
+	padding: 0;
+	overflow: hidden;
+}
+.projects .box li a {
+	color: rgb(1, 171, 171);
+}
+.projects .box li a:hover {
+	color: rgb(0, 212, 212);
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Contacts
+/* ------------------------------------------------------------------ */
+.contacts .contact-icons {
+	margin: 20px 0;
+	padding: 0;
+	font-size: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	word-spacing: 20px;
+	color: rgb(211, 211, 211);
+}
+.contacts li {
+	display: inline-block;
+	padding: 0;
+	overflow: hidden;
+}
+.contacts .contact-icons  .fa-location-dot {
+	color: rgb(255, 130, 130);
+}
+.contacts .contact-icons .fa-envelope {
+	color: rgb(130, 168, 255);
+}
+.contacts .contact-icons .fa-linkedin {
+	color: rgb(14, 118, 168)
+}
+.contacts .contact-icons .fa-github {
+	color: rgb(64, 120, 192)
+}
+.contacts .contact-icons .fa-discord {
+	color: rgb(114, 137, 218);
+}
+
+/* ------------------------------------------------------------------ */
+/* g. Footer
+/* ------------------------------------------------------------------ */
+.to-top {
+	position: absolute;
+	top: -24px;
+	left: 50%;
+	margin-left: -28px;
+}
+.to-top a {
+	border: 0 none;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: rgb(85, 85, 85);
+	color: rgb(175, 175, 175);
+	font-size: 60px;
+	line-height: 60px;
+	border-radius: 100%;
+}
+.to-top a:hover {
+	color: rgb(126, 216, 216);
+}
+
+/* ------------------------------------------------------------------ */
+/* h. Theme Toggle
+/* ------------------------------------------------------------------ */
+.theme {
+	width: 3.75rem;
+	height: 3.75rem;
+	background-color: rgb(238, 232, 225);
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.theme i {
+	font-size: 3rem;
+	color: rgb(119, 119, 119);
+	position: absolute;
+}
+.theme i:hover {
+	color: #d4af37;
+}
+.theme:active {
+	animation-name: rotate;
+	animation-duration: 0.3s;
+}
+.theme:hover {
+	animation-name: rotate;
+	animation-duration: 0.7s;
+}
