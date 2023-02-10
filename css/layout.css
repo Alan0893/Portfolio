@@ -326,7 +326,12 @@ ul.nav li a.current {
 	margin-top: 20px;
 	height: 260px;
 }
-
+.projects #proj3 img {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	height: 222px;
+}
 
 /* ------------------------------------------------------------------ */
 /* g. Contacts Section
@@ -357,13 +362,61 @@ ul.nav li a.current {
 /* ------------------------------------------------------------------ */
 /* h. Footer
 /* ------------------------------------------------------------------ */
-footer {
-	padding-top: 48px;
-	margin-bottom: 48px;
-	color: #1cc4f2;
-	font-size: 14px;
-	text-align: center;
-	position: relative;
+.footer {
 	background-color: rgb(235, 233, 232);
-	height: 100px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 45px 50px;
+}
+.footer .footer-left p {
+	color: rgb(90, 90, 90);
+	font-size: 14px;
+	margin: 0;
+}
+.footer p.footer-links {
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	margin: 0 0 10px;
+	padding: 0;
+}
+.footer p.footer-links a {
+	text-decoration: none;
+	color: inherit;
+}
+.footer .footer-links a:before {
+	content: "·";
+	font-size: 20px;
+	left: 0;
+	color: rgb(0, 0, 0);
+	display: inline-block;
+	padding-right: 5px;
+}
+.footer .footer-links .link-1:before {
+	content: none;
+}
+.footer .footer-right {
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+.footer .footer-right a {
+	display: inline-grid;
+	width: 35px;
+	height: 35px;
+	background-color: rgb(85, 197, 180);
+	border-radius: 10px;
+	font-size: 20px;
+	color: #ffffff;
+	place-items: center;
+	text-decoration: none;
+}
+.footer .footer-right a:hover {
+	background-color: rgb(85, 197, 180, 0.7);
+	width: 38px;
+	height: 38px;
+}
+.footer p.footer-links a:hover {
+	text-decoration: underline;
 }
