@@ -1,6 +1,6 @@
 /*==================================================
    TOC:
-   a. Webfonts and Icon Fonts
+   a. Scrollbar
    b. General
    c. Typography
    d. Buttons & Toggles
@@ -8,9 +8,27 @@
 /*==================================================*/
 
 /* ------------------------------------------------------------------ */
-/* a. Webfonts and Icon Fonts
+/* a. Scrollbar
 /* ------------------------------------------------------------------ */
-
+ /* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(16, 102, 149);
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 12px;
+}
+*::-webkit-scrollbar-track {
+	background: auto;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(16, 102, 149);
+	border-radius: 25px;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(16, 102, 149, 0.7);
+}
 
 /* ------------------------------------------------------------------ */
 /* b.  General
