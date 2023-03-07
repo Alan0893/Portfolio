@@ -324,9 +324,15 @@ ul.nav li a.current {
 	display: block;
 	margin: auto;
 	margin-top: 20px;
-	height: 260px;
+	height: 275px;
 }
 .projects #proj3 img {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	height: 260px;
+}
+.projects #proj4 img {
 	display: block;
 	margin: auto;
 	margin-top: 20px;
