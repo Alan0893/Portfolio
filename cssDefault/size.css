@@ -1,0 +1,140 @@
+@media only screen and (max-width:1024px) {
+	.resume .work-header,
+	.resume .vol-header,
+	.resume .edu-header {
+		padding-right: 50px;
+	}
+	.resume .work-header h3,
+	.resume .vol-header h3,
+	.resume .edu-header h3 {
+		font-size: 1.8rem;
+	}
+	.resume .work-header p,
+	.resume .vol-header p,
+	.resume .edu-header p {
+		font-size: 1.4rem;
+	}
+	.resume .work-content,
+	.resume .vol-content,
+	.resume .edu-content {
+		padding-left: 50px;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.size-1-4 {
+		width: 25%;
+	}
+	.size-1-3 {
+		width: 33.3%;
+	}
+	.size-1-2 {
+		width: 50%;
+	}
+	.size-2-3 {
+		width: 66.7%;
+	}
+	.size-3-4 {
+		width: 75%;
+	}
+	.size-full {
+		width: 100%;
+	}
+
+	.resume .work-wrap::before,
+	.resume .vol-wrap::before,
+	.resume .edu-wrap::before {
+		left: 2.4rem;
+	}
+	.resume .work-icon,
+	.resume .vol-icon,
+	.resume .edu-icon {
+		left: 2.4rem;
+	}
+	.resume .work-header,
+	.resume .vol-header,
+	.resume .edu-header {
+		float: none;
+		width: auto;
+		padding-right: 15px;
+		text-align: left;
+	}
+	.resume .work-header h3,
+	.resume .vol-header h3,
+	.resume .edu-header h3 {
+		font-size: 2rem;
+	}
+	.resume .work-header p,
+	.resume .vol-header p,
+	.resume .edu-header p {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.resume .work-content,
+	.resume .vol-content,
+	.resume .edu-content {
+		margin: 0;
+	}
+	.resume .work-content h3,
+	.resume .vol-content h3,
+	.resume .edu-content h3 {
+		padding-bottom: 0;
+		padding-top: 2.1rem;
+		margin-bottom: .6rem;
+		font-size: 1.7rem;
+	}
+	.resume .timeline-content h4::after {
+		bottom: auto;
+		top: 0;
+	}
+	.resume .work-header,
+	.resume .vol-header,
+	.resume .edu-header,
+	.resume .work-content,
+	.resume .vol-content,
+	.resume .edu-content {
+		padding-left: 7rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.footer .footer-left,
+	.footer .footer-right {
+		text-align: center;
+	}
+
+	.footer .footer-right {
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer .footer-left p.footer-links {
+		line-height: 1.8;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.resume .work-wrap::before,
+	.resume .vol-wrap::before,
+	.resume .edu-wrap::before {
+		left: 1.8rem;
+	}
+	.resume .work-icon,
+	.resume .vol-icon,
+	.resume .edu-icon {
+		height: 3.6rem;
+		width: 3.6rem;
+		line-height: 3.6rem;
+		left: 1.8rem;
+		margin-left: -1.8rem;
+		font-size: 1.5rem;
+	}
+	.resume .work-header,
+	.resume .vol-header,
+	.resume .edu-header,
+	.resume .work-content,
+	.resume .vol-content,
+	.resume .edu-content {
+		padding-left: 5.5rem;
+	}
+}
