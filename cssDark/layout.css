@@ -177,6 +177,14 @@ ul.nav li a.current {
 	font-size: 1.5rem;
 	line-height: 1;
 }
+.about-content .info-list li span a:link,
+.about-content .info-list li span a:visited {
+	text-decoration: none;
+	color: rgb(136, 136, 136);
+}
+.about-content .info-list li span a:hover {
+	color: rgb(252, 252, 252);
+}
 .button-section {
 	text-align: center;
 }
