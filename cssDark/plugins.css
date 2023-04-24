@@ -13,14 +13,14 @@
 /* ------------------------------------------------------------------ */
 /* a. Fonts
 /* ------------------------------------------------------------------ */
-/*@font-face {
-	font-family: 'Lilita';
-	src: url(../files/fonts/LilitaOne.ttf);
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url(../files/fonts/Pretendard-Regular.ttf);
 }
 @font-face {
-	font-family: 'Nougat';
-	src: url(../files/fonts/Nougat.ttf);
-}*/
+	font-family: 'SuisseWorks';
+	src: url(../files/fonts/SuisseWorks-Regular.ttf);
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header

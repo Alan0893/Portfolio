@@ -262,9 +262,18 @@ ul.nav li a.current {
 	color:rgb(210, 210, 210);
 	font-family: 'Trebuchet MS', sans-serif;
 }
-.resume .work-content ul,
-.resume .vol-content ul,
-.resume .edu-content ul {
+.resume .work-content ul b,
+.resume .vol-content ul b,
+.resume .edu-content ul b{
+	font-family: 'SuisseWorks';
+	font-size: 13px;
+	color:rgba(200, 200, 200);
+}
+.resume .work-content ul li,
+.resume .vol-content ul li,
+.resume .edu-content ul li{
+	font-family: 'SuisseWorks';
+	font-size: 13px;
 	color:rgba(200, 200, 200);
 }
 
