@@ -1,0 +1,92 @@
+:root {
+	/*==================================================
+		DEFAULT.CSS	
+	/*==================================================*/
+	/* Scrollbar */
+	--scrollbar: rgb(20, 171, 168);
+	--scrollbar-hover: rgb(20, 171, 168, 0.7);
+	/* General */
+	--body-background: rgb(229, 228, 231);
+	/* Buttons & Toggles */
+	--button-background: rgb(155, 214, 214);
+	--button: rgb(0, 0, 0);
+	--button-hover: rgb(194, 190, 186);
+	/*==================================================
+		LAYOUT.CSS	
+	/*==================================================*/
+	/* General */
+	--subhead: rgb(131, 180, 180);
+	--heading: rgb(45, 45, 45);
+	/* Header */
+	--header-background: rgb(233, 235, 234) url(https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610101987058-3PFR3HTAHFFDZKI67A8X/11.jpg) no-repeat center center;
+	--header-name: black;
+	--header-text-shadow: 0px 1px 3px rgba(255, 255, 255, .8);
+	--header-role: rgb(155, 214, 214);
+	--header-role-text-shadow: 0px 1px 3px rgba(255, 255, 255, .3);
+	/* Navigation */
+	--nav-wrap-background: rgb(190, 190, 190);
+	--ul-nav-li-a: rgb(0, 0, 0);
+	--ul-nav-li-a-current: rgb(0, 160, 160);
+	/* About */
+	--about-background: rgb(251, 244, 239);
+	--about-content-p: rgb(82, 82, 82);
+	--about-content: rgb(155, 214, 214);
+	--about-content-info-list-li: rgb(0, 0, 0);
+	--about-content-info-list-li-strong: rgb(3, 3, 3);
+	--about-content-info-list-li-span: rgb(119, 119, 119);
+	--about-content-info-list-li-span-a-hover: rgb(3, 3, 3);
+	/* Resume */
+	--resume-background: rgb(231, 229, 228);
+	--resume-wrap-before: rgba(143, 143, 143, 0.5);
+	--resume-header-h3: rgb(71, 203, 155);
+	--resume-header-p: rgb(82, 82, 82);
+	--resume-content-h4: rgb(45, 45, 45);
+	--resume-content-ul-b: rgb(55, 55, 55);
+	--resume-content-ul-li: rgb(55, 55, 55);
+	/* Projects */
+	--projects-background: rgb(231, 229, 228);
+	--projects-box: rgba(49, 216, 216, 0.2);
+	--projects-box-h4: black;
+	--projects-box-p: rgb(85, 85, 85);
+	--projects-box-lang: rgb(0, 167, 167);
+	/* Contacts */
+	--contacts: rgb(231, 229, 228);
+	--contacts-p: rgb(90, 90, 90);
+	/* Footer */
+	--footer-background: rgb(235, 233, 232);
+	--footer-left-p: rgb(90, 90, 90);
+	--footer-p-links: rgb(0, 0, 0);
+	--footer-links-a-before: rgb(0, 0, 0);
+	--footer-right-a-background: rgb(85, 197, 180);
+	--footer-right-a: #ffffff;
+	--footer-right-a-hover: rgb(85, 197, 180, 0.7);
+	/*==================================================
+		PLUGINS.CSS	
+	/*==================================================*/
+	/* Header */
+	--header-social-li-a: rgb(177, 255, 255);
+	--header-social-li-a-hover: rgb(123, 179, 179);
+	/* Resume */
+	--resume-icon-background: rgb(206, 206, 206);
+	--resume-icon: rgb(0,0,0);
+	--resume-current: rgb(71, 203, 155);
+	/* Projects */
+	--projects-box-li-a: rgb(1, 171, 171);
+	--projects-box-li-a-hover: rgb(0, 212, 212);
+	/* Contacts */
+	--contacts-icons: rgb(211, 211, 211);
+	--contacts-location: rgb(255, 130, 130);
+	--contacts-envelope: rgb(130, 168, 255);
+	--contacts-linkedin: rgb(14, 118, 168);
+	--contacts-github: rgb(64, 120, 192);
+	--contacts-discord: rgb(114, 137, 218);
+	/* Footer */
+	--to-top-a-background: rgb(85, 85, 85);
+	--to-top-a: rgb(175, 175, 175);
+	--to-top-a-hover: rgb(126, 216, 216);
+	/* Theme */
+	--theme: rgb(238, 232, 225);
+	--theme-i: rgb(119, 119, 119);
+	--theme-i-hover: #d4af37;
+	
+}

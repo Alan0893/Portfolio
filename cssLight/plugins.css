@@ -1,0 +1,202 @@
+/*==================================================
+   TOC:
+   a. Fonts
+   b. Header
+   c. About
+   d. Resume
+   e. Projects
+   f. Contacts
+   g. Footer
+   h. Theme Toggle
+/*==================================================*/
+
+/* ------------------------------------------------------------------ */
+/* a. Fonts
+/* ------------------------------------------------------------------ */
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url(../files/fonts/Pretendard-Regular.ttf);
+}
+@font-face {
+	font-family: 'SuisseWorks';
+	src: url(../files/fonts/SuisseWorks-Regular.ttf);
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Header
+/* ------------------------------------------------------------------ */
+.header .social {
+	margin: 20px 0;
+	padding: 0;
+	font-size: 25px;
+}
+.header .social li {
+	display: inline-block;
+	margin: 0 15px;
+	padding: 0;
+	overflow: hidden;
+}
+header .social li a {
+	color: var(--header-social-li-a);
+}
+header .social li a:hover {
+	color: var(--header-social-li-a-hover);
+}
+.header .social li .fa-linkedin {
+	animation: 2s lineUp linear;
+}
+.header .social li .fa-github {
+	animation: 2s lineRight linear;
+}
+.header .social li .fa-envelope {
+	animation: 2s lineLeft linear;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. About
+/* ------------------------------------------------------------------ */
+.about-content img {
+	width: 40px;
+	margin-right: 10px;
+}
+.about-content img:hover {
+	width: 43px;
+	margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Resume
+/* ------------------------------------------------------------------ */
+.resume .work-icon,
+.resume .vol-icon,
+.resume .edu-icon {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: var(--resume-icon-background);
+	border-radius: 50%;
+	text-align: center;
+	color: var(--resume-icon);
+	position: absolute;
+	left: 35%;
+	top: .8rem;
+	margin-left: -2.4rem;
+}
+.resume #current-job,
+.resume #current-edu {
+	background: var(--resume-current);
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Projects
+/* ------------------------------------------------------------------ */
+.projects .box .proj-icons {
+	margin: 20px 0;
+	padding: 0;
+	font-size: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	word-spacing: 20px;
+}
+.projects .box li {
+	display: inline-block;
+	padding: 0;
+	overflow: hidden;
+}
+.projects .box li a {
+	color: var(--projects-box-li-a);
+}
+.projects .box li a:hover {
+	color: var(--projects-box-li-a-hover);
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Contacts
+/* ------------------------------------------------------------------ */
+.contacts .contact-icons {
+	margin: 20px 0;
+	padding: 0;
+	font-size: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	word-spacing: 20px;
+	color: var(--contacts-icon);
+}
+.contacts li {
+	display: inline-block;
+	padding: 0;
+	overflow: hidden;
+}
+.contacts .contact-icons  .fa-location-dot {
+	color: var(--contacts-location);
+}
+.contacts .contact-icons .fa-envelope {
+	color: var(--contacts-envelope);
+}
+.contacts .contact-icons .fa-linkedin {
+	color: var(--contacts-linkedin);
+}
+.contacts .contact-icons .fa-github {
+	color: var(--contacts-github)
+}
+.contacts .contact-icons .fa-discord {
+	color: var(--contacts-discord);
+}
+
+/* ------------------------------------------------------------------ */
+/* g. Footer
+/* ------------------------------------------------------------------ */
+.to-top {
+	position: absolute;
+	top: -24px;
+	left: 50%;
+	margin-left: -28px;
+}
+.to-top a {
+	border: 0 none;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: var(--to-top-a-background);
+	color: var(--to-top-a);
+	font-size: 60px;
+	line-height: 60px;
+	border-radius: 100%;
+}
+.to-top a:hover {
+	color: var(--to-top-a-hover);
+}
+
+/* ------------------------------------------------------------------ */
+/* h. Theme Toggle
+/* ------------------------------------------------------------------ */
+.theme {
+	width: 3.75rem;
+	height: 3.75rem;
+	background-color: var(--theme);
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.theme i {
+	font-size: 3rem;
+	color: var(--theme-i);
+	position: absolute;
+}
+.theme i:hover {
+	color: var(--theme-i-hover);
+}
+.theme:active {
+	animation-name: rotate;
+	animation-duration: 0.3s;
+}
+.theme:hover {
+	animation-name: rotate;
+	animation-duration: 0.7s;
+}
