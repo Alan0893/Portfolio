@@ -292,7 +292,7 @@ ul.nav li a.current {
 	background: rgba(76, 139, 245, .2);
 	border-radius: 25px;
 	width: 100%;
-	height: auto;
+	height: 660px;
 	margin-bottom: 20px;
 	display: inline-block;
 }
@@ -302,10 +302,6 @@ ul.nav li a.current {
 .fade {
 	animation-name: fade;
 	animation-duration: 1.5s;
-}
-@keyframes fade {
-	from { opacity: .4 }
-	to { opacity: 1 }
 }
 .projects .box .imgSlide1 {
 	display: none;
@@ -353,7 +349,7 @@ ul.nav li a.current {
 	display: block;
 	margin: auto;
 	margin-top: 20px;
-	height: 222px;
+	height: 180px;
 }
 
 /* ------------------------------------------------------------------ */
