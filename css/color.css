@@ -88,5 +88,97 @@
 	--theme: rgb(238, 232, 225);
 	--theme-i: rgb(119, 119, 119);
 	--theme-i-hover: #d4af37;
+}
+
+.dark-theme {
+	/*==================================================
+		DEFAULT.CSS	
+	/*==================================================*/
+	/* Scrollbar */
+	--scrollbar: rgb(16, 102, 149);
+	--scrollbar-hover: rgb(16, 102, 149, 0.7);
+	/* General */
+	--body-background: rgb(24, 26, 27);
+	/* Buttons & Toggles */
+	--button-background: rgb(61, 131, 202);
+	--button: rgb(255, 255, 255);
+	--button-hover: rgb(61, 65, 69);
+	/*==================================================
+		LAYOUT.CSS	
+	/*==================================================*/
+	/* General */
+	--subhead: rgb(76, 139, 245);
+	--heading: rgb(210, 210, 210);
+	/* Header */
+	--header-background: rgb(22, 20, 21) url(https://i.pinimg.com/originals/89/51/b0/8951b0310ec70ee604585dca24ac4e90.jpg) no-repeat center center;
+	--header-name: white;
+	--header-text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+	--header-role: rgb(208, 236, 255);
+	--header-role-text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+	/* Navigation */
+	--nav-wrap-background: rgb(44, 44, 44);
+	--ul-nav-li-a: rgb(255, 255, 255);
+	--ul-nav-li-a-current: rgb(92, 152, 255);
+	/* About */
+	--about-background: rgb(4, 11, 16);
+	--about-content-p: rgb(173, 173, 173);
+	--about-content: rgb(146, 182, 255);
+	--about-content-info-list-li: rgb(255, 255, 255);
+	--about-content-info-list-li-strong: rgb(252, 252, 252);
+	--about-content-info-list-li-span: rgb(136, 136, 136);
+	--about-content-info-list-li-span-a-hover: rgb(252, 252, 252);
+	/* Resume */
+	--resume-background: rgb(24, 26, 27);
+	--resume-wrap-before: rgba(255, 255, 255, 0.5);
+	--resume-header-h3: rgb(0, 198, 126);
+	--resume-header-p: rgb(173, 173, 173);
+	--resume-content-h4: rgb(210, 210, 210);
+	--resume-content-ul-b: rgba(200, 200, 200);
+	--resume-content-ul-li: rgba(200, 200, 200);
+	/* Projects */
+	--projects-background: rgb(24, 26, 27);
+	--projects-box: rgba(76, 139, 245, .2);
+	--projects-box-h4: white;
+	--projects-box-p: rgb(170, 170, 170);
+	--projects-box-lang: rgb(130, 180, 250);
+	/* Contacts */
+	--contacts: rgb(24, 26, 27);
+	--contacts-p: rgb(165, 165, 165);
+	/* Footer */
+	--footer-background: rgb(20, 22, 23);
+	--footer-left-p: rgb(165, 165, 165);
+	--footer-p-links: rgb(255, 255, 255);
+	--footer-links-a-before: rgb(255, 255, 255);
+	--footer-right-a-background: rgb(10, 84, 148);
+	--footer-right-a: #ffffff;
+	--footer-right-a-hover: rgb(10, 84, 148, 0.7);
+	/*==================================================
+		PLUGINS.CSS	
+	/*==================================================*/
+	/* Header */
+	--header-social-li-a: rgb(180, 206, 255);
+	--header-social-li-a-hover: rgb(0, 83, 238);
+	/* Resume */
+	--resume-icon-background: rgb(49, 49, 49);
+	--resume-icon: rgb(255, 255, 255);
+	--resume-current: rgb(0, 109, 69);
+	/* Projects */
+	--projects-box-li-a: rgb(180, 206, 255);
+	--projects-box-li-a-hover: rgb(64, 120, 192);
+	/* Contacts */
+	--contacts-icons: rgb(211, 211, 211);
+	--contacts-location: rgb(255, 130, 130);
+	--contacts-envelope: rgb(130, 168, 255);
+	--contacts-linkedin: rgb(14, 118, 168);
+	--contacts-github: rgb(64, 120, 192);
+	--contacts-discord: rgb(114, 137, 218);
+	/* Footer */
+	--to-top-a-background: rgb(170, 170, 170);
+	--to-top-a: rgb(80, 80, 80);
+	--to-top-a-hover: rgb(60, 116, 188);
+	/* Theme */
+	--theme: rgb(70, 70, 70);
+	--theme-i: rgb(119, 119, 119);
+	--theme-i-hover: #C0C0C0;
 	
 }
