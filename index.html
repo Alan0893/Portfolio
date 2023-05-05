@@ -13,13 +13,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--DEFAULT CSS
 		---------------------------------->
-		<link id="defStyle" rel="stylesheet" type="text/css" href="./cssLight/default.css">
+		<link rel="stylesheet" type="text/css" href="./css/default.css">
 		<!--LAYOUT CSS
 		---------------------------------->
-		<link id="layStyle" rel="stylesheet" type="text/css" href="./cssLight/layout.css">
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
 		<!--PLUGINS CSS
 		---------------------------------->
-		<link id="plugStyle" rel="stylesheet" type="text/css" href="./cssLight/plugins.css">
+		<link rel="stylesheet" type="text/css" href="./css/plugins.css">
 		<!--SIZING CSS
 		---------------------------------->
 		<link rel="stylesheet" type="text/css" href="./css/size.css">
@@ -630,12 +630,13 @@
 		 * Changes the image theme
 		 * Adds a toggle (bottom right) to change theme
 		 */ 
-		function toggleTheme(boolTheme) {
-			if (boolTheme) {
-				document.getElementById('defStyle').setAttribute('href', "./cssDark/default.css")
-				document.getElementById('layStyle').setAttribute('href', "./cssDark/layout.css")
-				document.getElementById('plugStyle').setAttribute('href', "./cssDark/plugins.css")
+		
+		// Function to set the set the theme
+		function setTheme(themeName) {
+			localStorage.setItem('theme', themeName);
+			document.documentElement.className = themeName;
 
+			if(themeName == 'theme-dark') {
 				document.getElementById('calc1').setAttribute('src', "/files/projects/calculatorDark/calc1.png")
 				document.getElementById('calc2').setAttribute('src', "/files/projects/calculatorDark/calc2.png")
 				document.getElementById('calc3').setAttribute('src', "/files/projects/calculatorDark/calc3.png")
@@ -649,10 +650,6 @@
 				document.getElementById('stock6').setAttribute('src', "/files/projects/stockDark/stock6.png")
 				theme.firstElementChild.className = "far fa-moon"
 			} else {
-				document.getElementById('defStyle').setAttribute('href', "./cssLight/default.css")
-				document.getElementById('layStyle').setAttribute('href', "./cssLight/layout.css")
-				document.getElementById('plugStyle').setAttribute('href', "./cssLight/plugins.css")
-
 				document.getElementById('calc1').setAttribute('src', "/files/projects/calculator/calc1.png")
 				document.getElementById('calc2').setAttribute('src', "/files/projects/calculator/calc2.png")
 				document.getElementById('calc3').setAttribute('src', "/files/projects/calculator/calc3.png")
@@ -667,15 +664,27 @@
 				theme.firstElementChild.className = "far fa-sun"
 			}
 		}
+		// Function to toggle between themes
+		function toggleTheme() {
+			if (localStorage.getItem('theme') === 'theme-dark') {
+				setTheme('theme-light');
+			} else {
+				setTheme('theme-dark');
+			}
+		}
+
 		const theme = document.querySelector('.theme');
 		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
-		toggleTheme(systemTheme)
+		if(systemTheme.matches) // set to dark theme
+			setTheme('theme-dark')
+		else	//set to light theme
+			setTheme('theme-light')
 		theme.addEventListener('click', () => {
 			const currTheme = theme.firstElementChild.className
 			const isDark = (currTheme == "far fa-moon")
-			toggleTheme(!isDark)
+			toggleTheme()
 		})
-		
+
 		/**
 		 * Projects Section
 		 * Shows the image of the project in a slide
