@@ -63,6 +63,12 @@ header .social li a:hover {
 	width: 43px;
 	margin-right: 10px;
 }
+#assembly {
+	width: 57px;
+}
+#assembly:hover {
+	width: 60px;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Resume
