@@ -280,77 +280,7 @@ ul.nav li a.current {
 /* ------------------------------------------------------------------ */
 /* f. Projects Section
 /* ------------------------------------------------------------------ */
-.projects {
-	padding-top: 0rem;
-	padding-bottom: 0rem;
-	background-color: var(--projects-background);
-	overflow: hidden;
-}
-.projects .box {
-	position: relative;
-	padding-top: 1.5rem;
-	background: var(--projects-box);
-	border-radius: 25px;
-	width: 100%;
-	height: auto;
-	margin-bottom: 20px;
-	display: inline-block;
-}
-.projects .box img {
-	border-radius: 20px;
-}
-.fade {	
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-.projects .box .imgSlide1 {
-	display: none;
-}
-.projects .box h4 {
-	color: var(--projects-box-h4);
-	text-align: center;
-	margin-top: 10px;
-}
-.projects .box p {
-	color: var(--projects-box-p);
-	text-align: center;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 10px;
-	font-family: 'Tahoma', sans-serif;
-	font-size: smaller;
-}
-.projects .box .lang {
-	text-align: center;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: -15px;
-	color:var(--projects-box-lang);
-}
-.projects #proj1 img {
-	display: block;
-	margin: auto;
-	margin-top: 20px;
-	height: 275px;
-}
-.projects #proj2 img {
-	display: block;
-	margin: auto;
-	margin-top: 20px;
-	height: 275px;
-}
-.projects #proj3 img {
-	display: block;
-	margin: auto;
-	margin-top: 20px;
-	height: 260px;
-}
-.projects #proj4 img {
-	display: block;
-	margin: auto;
-	margin-top: 20px;
-	height: 222px;
-}
+
 
 /* ------------------------------------------------------------------ */
 /* g. Contacts Section

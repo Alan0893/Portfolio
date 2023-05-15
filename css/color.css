@@ -44,11 +44,7 @@
 	--resume-content-ul-b: rgb(55, 55, 55);
 	--resume-content-ul-li: rgb(55, 55, 55);
 	/* Projects */
-	--projects-background: rgb(231, 229, 228);
-	--projects-box: rgba(49, 216, 216, 0.2);
-	--projects-box-h4: black;
-	--projects-box-p: rgb(85, 85, 85);
-	--projects-box-lang: rgb(0, 167, 167);
+
 	/* Contacts */
 	--contacts: rgb(231, 229, 228);
 	--contacts-p: rgb(90, 90, 90);
@@ -137,11 +133,7 @@
 	--resume-content-ul-b: rgba(200, 200, 200);
 	--resume-content-ul-li: rgba(200, 200, 200);
 	/* Projects */
-	--projects-background: rgb(24, 26, 27);
-	--projects-box: rgba(76, 139, 245, .2);
-	--projects-box-h4: white;
-	--projects-box-p: rgb(170, 170, 170);
-	--projects-box-lang: rgb(130, 180, 250);
+
 	/* Contacts */
 	--contacts: rgb(24, 26, 27);
 	--contacts-p: rgb(165, 165, 165);
