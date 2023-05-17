@@ -58,3 +58,16 @@
 		opacity: 1 
 	}
 }
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+}
+.modal-open {
+    overflow: hidden;
+}

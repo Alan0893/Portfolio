@@ -40,7 +40,7 @@
 	<body>
 		<!--HEADER
 		---------------------------------->
-		<header class="header">
+		<header class="header blur">
 			<!--NAVIGATION
 			---------------------------------->
 			<nav class="nav-wrap">
@@ -55,7 +55,7 @@
 
 			<!--BANNER
 			---------------------------------->
-			<div class="banner" id="home">
+			<div class="banner blur" id="home">
 				<h1 class="name">Alan Lin</h1>
 				<h2 class="role">College Student | Software Engineer</h2>
 				<ul class="social">
@@ -68,7 +68,7 @@
 
 		<!--ABOUT
 		---------------------------------->
-		<section class="about" id="about">
+		<section class="about blur" id="about">
 			<h3 class="subhead">About Me</h3>
 			<h2 class="heading">Introduction</h2>
 			<div class="content">
@@ -160,7 +160,7 @@
 
 		<!--RESUME 
 		---------------------------------->
-		<section class="resume" id="resume">
+		<section class="resume blur" id="resume">
 			<h3 class="subhead">Resume</h3>
 			<!--EDUCATION
 			---------------------------------->
@@ -368,7 +368,7 @@
 			<h2 class="heading">My Creations</h2>
 			<!--PROJECT 4
 			---------------------------------->
-			<div class="col-four size-full">
+			<div class="col-four size-full blur">
 				<div class="box reveal" id="proj4">
 					<h4>Countrx</h4>
 					<img id="countrx1" alt="countrx1" src="/files/projects/countrx.png">
@@ -409,7 +409,7 @@
 
 		<!--CONTACT 
 		---------------------------------->
-		<section class="contacts reveal" id="contacts">
+		<section class="contacts reveal blur" id="contacts">
 			<h3 class="subhead">Contacts</h3>
 			<h2 class="heading">Connect with Me</h2>
 			<div class="col-two size-full">
@@ -498,136 +498,10 @@
 	
 	<!--SCRIPTS 
 	---------------------------------->
-	<script>
-		// Open modal
-		var modal = document.getElementById("modal-04");
-		var btn = document.getElementById("proj4");
-		var span = document.getElementById("close");
-
-		btn.onclick = function () {
-			modal.style.display = "block";
-		}
-
-		// Close modal
-		span.onclick = function () {
-			modal.style.display = "none";
-		}
-		// Close modal when clicking outside
-		document.addEventListener("click", function (event) {
-			if (event.target === modal) {
-				modal.style.display = "none";
-			}
-		});
-	</script>
-	<script> 
-		/**
-		 * Theme Toggle
-		 * Sets the default theme based on the system theme
-		 * Changes the image theme
-		 * Adds a toggle (bottom right) to change theme
-		 */ 
-		
-		// Function to set the set the theme
-		function setTheme(themeName) {
-			localStorage.setItem('theme', themeName);
-			document.documentElement.className = themeName;
-
-			if(themeName == 'theme-dark') {
-				theme.firstElementChild.className = "far fa-moon"
-			} else {
-				theme.firstElementChild.className = "far fa-sun"
-			}
-		}
-		// Function to toggle between themes
-		function toggleTheme() {
-			if (localStorage.getItem('theme') === 'theme-dark') {
-				setTheme('theme-light');
-			} else {
-				setTheme('theme-dark');
-			}
-		}
-
-		const theme = document.querySelector('.theme');
-		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
-		if(systemTheme.matches) // set to dark theme
-			setTheme('theme-dark')
-		else	//set to light theme
-			setTheme('theme-light')
-		theme.addEventListener('click', () => {
-			const currTheme = theme.firstElementChild.className
-			const isDark = (currTheme == "far fa-moon")
-			toggleTheme()
-		})
-
-		/**
-		 * Smooth Scrolling
-		 * Scrolls to each section and updates the current place in the navigation
-		 */
-		let section = document.querySelectorAll('section');
-		let menu = document.querySelectorAll('header nav ul li a');
-		window.onscroll = () => {
-			section.forEach(i => {
-				let top = window.scrollY;
-				let offset = i.offsetTop - 150;
-				let height = i.offsetHeight;
-				let id = i.getAttribute('id');
-				if (top >= offset && top < offset + height) {
-					menu.forEach(link => {
-						link.classList.remove('current');
-						document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('current');
-					});
-				}
-				if(window.scrollY < 280) {
-					menu.forEach(link => {
-						link.classList.remove('current');
-						document.querySelector('header nav ul li a[href*=home]').classList.add('current');
-					});
-				}
-			});
-		};
-
-		/**
-		 * Section Reveal
-		 * Transitions to the next section
-		 */
-		function reveal() {
-			var reveals = document.querySelectorAll(".reveal");
-
-			for (var i = 0; i < reveals.length; i++) {
-				var windowHeight = window.innerHeight;
-				var elementTop = reveals[i].getBoundingClientRect().top;
-				var elementVisible = 150;
-
-				if (elementTop < windowHeight - elementVisible) {
-					reveals[i].classList.add("active");
-				} else {
-					reveals[i].classList.remove("active");
-				}
-			}
-		}
-		window.addEventListener("scroll", reveal);
-		reveal();
-	</script>
+	<script src="./scripts/modal.js"></script>
+	<script src="./scripts/theme.js"></script>
+	<script src="./scripts/smoothscroll.js"></script>
+	<script src="./scripts/reveal.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		/**
-		 * Smooth Scrolling
-		 * Smoothly scrolls to the section specified by the link 
-		 */
-		jQuery(document).ready(function () {
-			$("a").on('click', function (event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-
-					var hash = this.hash;
-
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 100, function () {
-						window.location.hash = hash;
-					});
-				}
-			});
-		});
-	</script> <!-- END OF SCRIPTS -->
+	<!-- END OF SCRIPTS -->
 </html>

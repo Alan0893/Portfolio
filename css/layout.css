@@ -324,6 +324,8 @@ ul.nav li a.current {
 	height: 75%;
 	overflow: auto;
  	margin: auto;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
 }
 .modal::-webkit-scrollbar {
   width: 0px; 
@@ -360,6 +362,10 @@ ul.nav li a.current {
 	margin-right: 20px;
 	margin-top: -15px;
 	color: var(--projects-box-lang);
+}
+.blurred {
+    filter: blur(5px);
+    pointer-events: none;
 }
 
 
