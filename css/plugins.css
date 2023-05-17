@@ -4,7 +4,7 @@
    b. Header
    c. About
    d. Resume
-   e. Projects
+   e. Projects / Modals
    f. Contacts
    g. Footer
    h. Theme Toggle
@@ -94,9 +94,9 @@ header .social li a:hover {
 }
 
 /* ------------------------------------------------------------------ */
-/* e. Projects
+/* e. Projects / Modals
 /* ------------------------------------------------------------------ */
-.projects .modal .proj-icons {
+.modals .modal .proj-icons {
 	margin: 20px 0;
 	padding: 0;
 	font-size: 25px;
@@ -105,21 +105,21 @@ header .social li a:hover {
 	text-align: center;
 	word-spacing: 20px;
 }
-.projects .modal li {
+.modals .modal li {
 	display: inline-block;
 	padding: 0;
 	overflow: hidden;
 }
-.projects .modal li a {
+.modals .modal li a {
 	color: var(--projects-box-li-a);
 }
-.projects .modal li a:hover {
+.modals .modal li a:hover {
 	color: var(--projects-box-li-a-hover);
 }
-.projects .modal .proj-icons #close {
+.modals .modal .proj-icons .close {
 	color: var(--projects-modal-close);
 }
-.projects .modal .proj-icons #close:hover {
+.modals .modal .proj-icons .close:hover {
 	color: var(--projects-modal-close-hover);
 }
 

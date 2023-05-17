@@ -291,14 +291,24 @@ ul.nav li a.current {
 	padding-top: 10px;
 	background: var(--projects-box);
 	border-radius: 25px;
-	width: 95%;
-	height: auto;
+	width: 92%;
+	height: 350px;
 	margin-bottom: 10px;
 	display: inline-block;
 }
-.projects .box:hover {
-	box-shadow: var(--projects-box-hover-shadow);
-	width: calc(95% + 20px);
+.projects .left:hover {
+	box-shadow: var(--projects-leftbox-hover-shadow);
+	width: calc(95% + 10px);
+	cursor: pointer;
+}
+.projects .middle:hover {
+	box-shadow: var(--projects-midbox-hover-shadow);
+	width: calc(95% + 10px);
+	cursor: pointer;
+}
+.projects .right:hover {
+	box-shadow: var(--projects-rightbox-hover-shadow);
+	width: calc(95% + 10px);
 	cursor: pointer;
 }
 .projects .box h4 {
@@ -306,11 +316,26 @@ ul.nav li a.current {
 	text-align: center;
 	margin-top: 10px;
 }
+/* PROJECT 4 */
 .projects #proj4 img {
 	display: block;
 	margin: auto;
 	margin-top: -45px;
-	height: 350px;
+	height: 330px;
+}
+/* PROJECT 3 */
+.projects #proj3 img {
+	display: block;
+	margin: auto;
+	margin-top: -45px;
+	height: 320px;
+}
+/* PROJECT 2 */
+.projects #proj2 img  {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	height: 265px;
 }
 .modal {
 	display: none;
@@ -319,7 +344,8 @@ ul.nav li a.current {
 	border-radius: 25px;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 50%;
+	bottom: 50%;
 	width: 75%;
 	height: 75%;
 	overflow: auto;
@@ -367,7 +393,9 @@ ul.nav li a.current {
     filter: blur(5px);
     pointer-events: none;
 }
-
+.modal-open {
+    overflow: hidden;
+}
 
 /* ------------------------------------------------------------------ */
 /* g. Contacts Section

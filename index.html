@@ -369,15 +369,34 @@
 			<!--PROJECT 4
 			---------------------------------->
 			<div class="col-four size-full blur">
-				<div class="box reveal" id="proj4">
+				<div proj class="box reveal left" id="proj4">
 					<h4>Countrx</h4>
-					<img id="countrx1" alt="countrx1" src="/files/projects/countrx.png">
+					<img id="countrx" alt="countrx" src="/files/projects/countrx.png">
 				</div>
 			</div> <!-- END OF PROJECT 4 -->
-			
-			<!--MODAL
+			<!--PROJECT 3
 			---------------------------------->
-			<div id="modal-04" class="modal">
+			<div class="col-four size-full blur">
+				<div proj class="box reveal middle" id="proj3">
+					<h4>Dow Jones Stock Predictor</h4>
+					<img id="stock" alt="stock" src="/files/projects/stock.png">
+				</div>
+			</div> <!--  END OF PROJECT 3 -->
+			<!--PROJECT 2
+			---------------------------------->
+			<div class="col-four size-full blur">
+				<div proj class="box reveal right" id="proj2">
+					<h4>Conversion Calculator</h4>
+					<img id="calc" alt="calc" src="/files/projects/calc.png">
+				</div>
+			</div> <!-- END OF PROJECT 2-->
+
+		</section> <!-- END OF PROJECTS SECTION -->
+
+		<section class="modals" id="modals">
+			<!--MODAL 4
+			---------------------------------->
+			<div id="modal-4" class="modal">
 				<div class="img-container">
 					<img class="" src="/files/projects/countrx.png">
 				</div>
@@ -386,11 +405,12 @@
 					<p>
 						Utilizes the REST Countries API to obtain country specific information and displays it in a simplified view.
 						Each information is sorted into categories with images accompanying them. Also utilizes the Google Maps
-						Embed API to display the country. Allows users to search for a country and displays that country's information.
+						Embed API to display the country. Allows users to search for a country and displays that country's
+						information.
 					</p>
 					<div class="categories">
 						<i class="fa-solid fa-tag"></i>
-						HTML, CSS, Javascript
+						HTML, CSS, Javascript, REST API
 					</div>
 					<ul class="proj-icons">
 						<li><a title="link" href="https://countrx.netlify.app/">
@@ -399,13 +419,76 @@
 						<li><a title="github" href="https://github.com/Alan0893/countrx">
 								<i class="fa-brands fa-github"></i></a>
 						</li>
-						<li><a title="link" id="close">
-							<i class="fa-regular fa-circle-xmark"></i></a>
+						<li><a title="link" close class="close" id="close4">
+								<i class="fa-regular fa-circle-xmark"></i></a>
 						</li>
 					</ul>
 				</div>
-			</div>
-		</section> <!-- END OF PROJECTS SECTION -->
+			</div> <!-- END OF MODAL 4 -->
+			<!--MODAL 3
+			---------------------------------->
+			<div id="modal-3" class="modal">
+				<div class="img-container">
+					<img class="" src="/files/projects/stock.png">
+				</div>
+				<div class="description-box">
+					<h4>Dow Jones Stock Predictor</h4>
+					<p>
+						This project was created for the 2022 BostonHacks Hackathon. My partner and I decided to create a stock
+						predictor, an application that would be able to utilize
+						trends from the past to better predict future trends.
+					</p>
+					<div class="categories">
+						<i class="fa-solid fa-tag"></i>
+						Python, Streamlit
+					</div>
+					<ul class="proj-icons">
+						<li><a title="link" href="https://dowjonesstockprediction.streamlit.app/">
+								<i class="fa-solid fa-link"></i></a>
+						</li>
+						<li><a title="github" href="https://github.com/Alan0893/dow_jones_stock_predictor">
+								<i class="fa-brands fa-github"></i></a>
+						</li>
+						<li><a title="link" href="https://devpost.com/software/dow-jones-stock-predictor">
+								<iconify-icon icon="simple-icons:devpost"></iconify-icon></a>
+						</li>
+						<li><a title="link" close class="close" id="close3">
+								<i class="fa-regular fa-circle-xmark"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- END OF MODAL 3 -->
+			<!--MODAL 2
+			---------------------------------->
+			<div id="modal-2" class="modal">
+				<div class="img-container">
+					<img class="" src="/files/projects/calc.png">
+				</div>
+				<div class="description-box">
+					<h4>Conversion Calculator</h4>
+					<p>
+						Initially created for me to learn html & css, I decided to add additional features to the application. It has the
+						ability to perform standard operations (addition, subtraction, etc.), as well as being able to convert units (Ex. Area:
+						ares → acres or Data: bits → bytes).
+					</p>
+					<div class="categories">
+						<i class="fa-solid fa-tag"></i>
+						HTML, CSS, Javascript
+					</div>
+					<ul class="proj-icons">
+						<li><a title="link" href="https://alcalculator.netlify.app/">
+								<i class="fa-solid fa-link"></i></a>
+						</li>
+						<li><a title="github" href="https://github.com/Alan0893/Calculator">
+								<i class="fa-brands fa-github"></i></a>
+						</li>
+						<li><a title="link" close class="close" id="close2">
+								<i class="fa-regular fa-circle-xmark"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- END OF MODAL 3 -->
+		</section>
 
 		<!--CONTACT 
 		---------------------------------->
@@ -503,5 +586,22 @@
 	<script src="./scripts/smoothscroll.js"></script>
 	<script src="./scripts/reveal.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+				$("a").on('click', function (event) {
+					if (this.hash !== "") {
+						event.preventDefault();
+
+						var hash = this.hash;
+
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 100, function () {
+							window.location.hash = hash;
+						});
+					}
+				});
+			});
+	</script>
 	<!-- END OF SCRIPTS -->
 </html>

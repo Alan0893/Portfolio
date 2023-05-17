@@ -46,7 +46,9 @@
 	/* Projects */
 	--projects-background: rgb(231, 229, 228);
 	--projects-box: rgba(49, 216, 216, 0.2);
-	--projects-box-hover-shadow: rgba(49, 216, 216, 0.4) -5px 5px, rgba(49, 216, 216, 0.3) -10px 10px, rgba(49, 216, 216, 0.2) -15px 15px, rgba(49, 216, 216, 0.1) -20px 20px;
+	--projects-leftbox-hover-shadow: rgba(49, 216, 216, 0.4) -5px 5px, rgba(49, 216, 216, 0.3) -10px 10px, rgba(49, 216, 216, 0.2) -15px 15px, rgba(49, 216, 216, 0.1) -20px 20px;
+	--projects-midbox-hover-shadow: rgba(49, 216, 216, 0.4) 0px 5px, rgba(49, 216, 216, 0.3) 0px 10px, rgba(49, 216, 216, 0.2) 0px 15px, rgba(49, 216, 216, 0.1) 0px 20px, rgba(49, 216, 216, 0.05) 0px 25px;
+	--projects-rightbox-hover-shadow: rgba(49, 216, 216, 0.4) 5px 5px, rgba(49, 216, 216, 0.3) 10px 10px, rgba(49, 216, 216, 0.2) 15px 15px, rgba(49, 216, 216, 0.1) 20px 20px, rgba(49, 216, 216, 0.05) 25px 25px;
 	--modal-img-container: aquamarine;
 	--modal-description-box: rgb(190, 190, 190);
 	--modal-description-box-h4: black;
@@ -144,7 +146,9 @@
 	/* Projects */
 	--projects-background: rgb(24, 26, 27);
 	--projects-box: rgba(76, 139, 245, .2);
-	--projects-box-hover-shadow: rgba(76, 139, 245, 0.4) -5px 5px, rgba(76, 139, 245, 0.3) -10px 10px, rgba(76, 139, 245, 0.2) -15px 15px, rgba(76, 139, 245, 0.1) -20px 20px;
+	--projects-leftbox-hover-shadow: rgba(76, 139, 245, 0.4) -5px 5px, rgba(76, 139, 245, 0.3) -10px 10px, rgba(76, 139, 245, 0.2) -15px 15px, rgba(76, 139, 245, 0.1) -20px 20px;
+	--projects-midbox-hover-shadow: rgba(76, 139, 245, 0.4) 0px 5px, rgba(76, 139, 245, 0.3) 0px 10px, rgba(76, 139, 245, 0.2) 0px 15px, rgba(76, 139, 245, 0.1) 0px 20px, rgba(76, 139, 245, 0.05) 0px 25px;
+	--projects-rightbox-hover-shadow: rgba(76, 139, 245, 0.4) 5px 5px, rgba(76, 139, 245, 0.3) 10px 10px, rgba(76, 139, 245, 0.2) 15px 15px, rgba(76, 139, 245, 0.1) 20px 20px, rgba(76, 139, 245, 0.05) 25px 25px;
 	--modal-img-container: aquamarine;
 	--modal-description-box: rgb(44, 44, 44);
 	--modal-description-box-h4: white;

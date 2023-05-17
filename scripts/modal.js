@@ -1,22 +1,32 @@
-// Open modal
-var modal = document.getElementById("modal-04");
-var btn = document.getElementById("proj4");
-var close = document.getElementById("close");
-var body = document.body;
-var blurElements = document.getElementsByClassName("blur");
+const body = document.body;
 
-btn.onclick = function () {
-  modal.style.display = "block";
-  addBlur();
-  //body.classList.add("modal-open");
-};
+const modals = document.getElementsByClassName("modal");
+const projs = document.querySelectorAll('[proj]')
+const exit = document.querySelectorAll("[close]");
+const blurElements = document.getElementsByClassName("blur");
 
-// Close modal
-close.onclick = function () {
-  modal.style.display = "none";
-  removeBlur();
-  //body.classList.remove("modal-open")
-};
+projs.forEach(p => {
+  p.addEventListener('click', () => {
+    let num = (p.id).replace("proj", "")
+    const currModal = document.getElementById("modal-" + num);
+    
+    currModal.style.display = "block"
+    addBlur();
+    body.classList.add("modal-open");
+  })
+})
+
+exit.forEach(e => {
+  e.addEventListener('click', () => {
+    let num = (e.id).replace("close", "")
+    const currModal = document.getElementById("modal-" + num);
+
+    currModal.style.display = "none";
+    removeBlur();
+    body.classList.remove("modal-open")
+  })
+})
+
 // Close modal when clicking outside
 /*window.addEventListener("click", function (event) {
 			var element = event.target
