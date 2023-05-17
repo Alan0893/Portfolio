@@ -46,8 +46,11 @@
 	/* Projects */
 	--projects-background: rgb(231, 229, 228);
 	--projects-box: rgba(49, 216, 216, 0.2);
-	--projects-box-h4: black;
-	--projects-box-p: rgb(85, 85, 85);
+	--projects-box-hover-shadow: rgba(49, 216, 216, 0.4) -5px 5px, rgba(49, 216, 216, 0.3) -10px 10px, rgba(49, 216, 216, 0.2) -15px 15px, rgba(49, 216, 216, 0.1) -20px 20px;
+	--modal-img-container: aquamarine;
+	--modal-description-box: rgb(190, 190, 190);
+	--modal-description-box-h4: black;
+	--modal-description-box-p: rgb(85, 85, 85);
 	--projects-box-lang: rgb(0, 167, 167);
 	/* Contacts */
 	--contacts: rgb(231, 229, 228);
@@ -74,6 +77,8 @@
 	/* Projects */
 	--projects-box-li-a: rgb(1, 171, 171);
 	--projects-box-li-a-hover: rgb(0, 212, 212);
+	--projects-modal-close: rgb(171, 1, 1);
+	--projects-modal-close-hover: rgb(212, 0, 0);
 	/* Contacts */
 	--contacts-icons: rgb(211, 211, 211);
 	--contacts-location: rgb(255, 130, 130);
@@ -139,8 +144,11 @@
 	/* Projects */
 	--projects-background: rgb(24, 26, 27);
 	--projects-box: rgba(76, 139, 245, .2);
-	--projects-box-h4: white;
-	--projects-box-p: rgb(170, 170, 170);
+	--projects-box-hover-shadow: rgba(76, 139, 245, 0.4) -5px 5px, rgba(76, 139, 245, 0.3) -10px 10px, rgba(76, 139, 245, 0.2) -15px 15px, rgba(76, 139, 245, 0.1) -20px 20px;
+	--modal-img-container: aquamarine;
+	--modal-description-box: rgb(44, 44, 44);
+	--modal-description-box-h4: white;
+	--modal-description-box-p: rgb(170, 170, 170);
 	--projects-box-lang: rgb(130, 180, 250);
 	/* Contacts */
 	--contacts: rgb(24, 26, 27);
@@ -167,6 +175,8 @@
 	/* Projects */
 	--projects-box-li-a: rgb(180, 206, 255);
 	--projects-box-li-a-hover: rgb(64, 120, 192);
+	--projects-modal-close: rgb(255, 180, 180);
+	--projects-modal-close-hover: rgb(192, 64, 64);
 	/* Contacts */
 	--contacts-icons: rgb(211, 211, 211);
 	--contacts-location: rgb(255, 130, 130);
