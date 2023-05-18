@@ -131,7 +131,7 @@ function wordSphere(canvas, texts, counts, options) {
 }
 
 /**
- * **************************************************************************************************
+ * 
  */
 const canvas = document.getElementById("canvas");
 
