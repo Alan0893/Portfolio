@@ -41,6 +41,14 @@
 		width: 100%;
 	}
 
+	.button-section .button {
+		width: 50%;
+		margin-bottom: 3rem;
+	}
+	.button-section [class*="col-"] .button:first-child {
+    	margin-right: 0;
+    }
+
 	.resume .work-wrap::before,
 	.resume .vol-wrap::before,
 	.resume .edu-wrap::before {
