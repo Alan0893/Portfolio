@@ -49,6 +49,23 @@
     	margin-right: 0;
     }
 
+	.projects .box {
+		width: 92%;
+		height: 280px;
+	}
+	/* PROJECT 4 */
+	.projects #proj4 img {
+		height: 80%;
+	}
+	/* PROJECT 3 */
+	.projects #proj3 img {
+		height: 80%;
+	}
+	/* PROJECT 2 */
+	.projects #proj2 img  {
+		height: 80%;
+	}
+
 	.resume .work-wrap::before,
 	.resume .vol-wrap::before,
 	.resume .edu-wrap::before {

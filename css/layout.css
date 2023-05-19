@@ -286,30 +286,34 @@ ul.nav li a.current {
 	background-color: var(--projects-background);
 	overflow: hidden;
 }
+.proj-wrapper {
+	padding-left: 45px;
+	margin: auto;
+}
 .projects .box {
 	position: relative;
 	padding-top: 10px;
 	background: var(--projects-box);
-	border-radius: 25px;
+	border-radius: 23px;
 	width: 92%;
 	height: 350px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	display: inline-block;
 }
 .projects .left:hover {
 	box-shadow: var(--projects-leftbox-hover-shadow);
-	width: calc(95% + 10px);
 	cursor: pointer;
+	width: calc(92% + 10px);
 }
 .projects .middle:hover {
 	box-shadow: var(--projects-midbox-hover-shadow);
-	width: calc(95% + 10px);
 	cursor: pointer;
+	width: calc(92% + 10px);
 }
 .projects .right:hover {
 	box-shadow: var(--projects-rightbox-hover-shadow);
-	width: calc(95% + 10px);
 	cursor: pointer;
+	width: calc(92% + 10px);
 }
 .projects .box h4 {
 	color: var(--modal-description-box-h4);
