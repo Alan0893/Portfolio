@@ -83,10 +83,10 @@
 			<!--PROFILE / SKILLS
 			---------------------------------->
 			<div class="row about-content">
-				<div class="col-five size-full">
+				<!--div class="col-five size-full"-->
 					<!--PROFILE
 					---------------------------------->
-					<h3>Profile</h3>
+					<!--h3>Profile</h3>
 					<ul class="info-list">
 						<li>
 							<strong>School:</strong>
@@ -115,6 +115,11 @@
 							<div id="copyMessage">Copied to Clipboard!</div>
 						</li>
 					</ul>
+				</div--> <!-- END OF PROFILE -->
+				<div class="col-five size-full">
+					<div class="canvas-container">
+						<canvas id="canvas"></canvas>
+					</div>
 				</div> <!-- END OF PROFILE -->
 				<!--SKILLS
 				---------------------------------->
@@ -592,7 +597,7 @@
 	<script src="./scripts/reveal.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./scripts/copyText.js"></script>
-	<!--script src="./scripts/word-sphere.js"></script-->
+	<script src="./scripts/word-sphere.js"></script>
 	<script>
 		jQuery(document).ready(function () {
 				$("a").on('click', function (event) {

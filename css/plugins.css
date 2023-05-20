@@ -21,6 +21,10 @@
 	font-family: 'SuisseWorks';
 	src: url(../files/fonts/SuisseWorks-Regular.ttf);
 }
+@font-face {
+	font-family: 'Aspekta';
+	src: url(../files/fonts/Aspekta.ttf);
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header

@@ -217,6 +217,14 @@ ul.nav li a.current {
 	left: -9px; top: 50%;
 	margin-top: -9px;
 }
+.canvas-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -60px;
+	margin-right: 30px;
+	margin-bottom: -70px;
+}
 
 /* ------------------------------------------------------------------ */
 /* e. Resume Section

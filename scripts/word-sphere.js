@@ -8,8 +8,7 @@ function wordSphere(canvas, texts, counts, options) {
     width = 500,
     height = 500,
     radius = 150,
-    padding = 50,
-    fontSize = 22,
+    fontSize = 20,
     tilt = 0,
     initialVelocityX = 0,
     initialVelocityY = 0,
@@ -17,10 +16,8 @@ function wordSphere(canvas, texts, counts, options) {
     initialRotationZ = 0,
   } = options;
 
-  let vx = initialVelocityX,
-    vy = initialVelocityY;
-  let rx = initialRotationX,
-    rz = initialRotationZ;
+  let vx = initialVelocityX,vy = initialVelocityY;
+  let rx = initialRotationX,rz = initialRotationZ;
 
   // canvas setup
   let ctx = canvas.getContext("2d");
@@ -89,8 +86,12 @@ function wordSphere(canvas, texts, counts, options) {
       // convert to cartesian and then draw.
       const alpha = 0.6 + 0.4 * (x / radius);
       const size = fontSize + 2 + 5 * (x / radius);
-      ctx.fillStyle = `rgba(0,0,0,${alpha})`;
-      ctx.font = `${size}px "Brandon Grotesque"`;
+      if(localStorage.getItem("theme") == "theme-dark") {
+        ctx.fillStyle = "rgb(146, 182, 255)";
+      } else {
+        ctx.fillStyle = 'black';
+      }
+      ctx.font = `${size}px "Aspekta"`;
       ctx.fillText(text, y + width / 2, -z + height / 2);
 
       ix--;
@@ -136,33 +137,18 @@ function wordSphere(canvas, texts, counts, options) {
 const canvas = document.getElementById("canvas");
 
 const texts = [
-  "HTML5",
-  "Javascript",
-  "Scala",
-  "Kotlin",
-  "Erlang",
-  "CSS",
-  "Python",
-  "Java",
-  "PostgreSQL",
-  "MongoDB",
-  "Android",
-  "TensorFlow",
-  "Flask",
-  "React",
-  "Redis",
-  "NodeJS",
-  "OCaml",
-  "Redux",
-  "Rx",
+  "HTML5", "CSS", "Javascript", "Java", "Python", 
+  "Bash", "Shell", "x86 Assembly", "C", "ReactJS", 
+  "Git", "Firebase", "Latex", "NumPy", "CS 112", 
+  "CS 131", "CS 210", "CS 132", "Arduino", "Github"
 ];
 const counts = [1, 2, 4, 5, 4, 2, 1];
 
 const options = {
   tilt: Math.PI / 9,
-  initialVelocityX: 0.09,
-  initialVelocityY: 0.09,
-  initialRotationX: Math.PI * 0.14,
+  initialVelocityX: 1,
+  initialVelocityY: 1,
+  initialRotationX: Math.PI * 0.5,
   initialRotationZ: 0,
 };
 
