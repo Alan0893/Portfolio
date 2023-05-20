@@ -4,18 +4,42 @@
  */
 function wordSphere(canvas, texts, counts, options) {
   const π = Math.PI; // happy math!
-  // Determine the device's screen size
-  const isSmallDevice = window.innerWidth < 900;
 
-  // Adjust the canvas dimensions
-  const canvasWidth = isSmallDevice ? 300 : 500;
-  const canvasHeight = isSmallDevice ? 300 : 500;
-
-  // Modify the font size
-  const fontsize = isSmallDevice ? 10 : 16;
-
-  // Modify the radius
-  const rad = isSmallDevice ? 100 : 150;
+  let canvasWidth, canvasHeight, fontsize, rad;
+  // Adjust elements according to device screen size
+  if (window.innerWidth <= 350) {
+    canvasWidth = 200;
+    canvasHeight = 200;
+    fontsize = 8;
+    rad = 85;
+    canvas.style.marginTop = "20px";
+    canvas.style.marginBottom = "30px";
+  } else if (window.innerWidth <= 480) {
+    canvasWidth = 300;
+    canvasHeight = 300;
+    fontsize = 8;
+    rad = 85;
+  } else if (window.innerWidth <= 600) {
+    canvasWidth = 450;
+    canvasHeight = 450;
+    fontsize = 12;
+    rad = 150;
+  } else if (window.innerWidth <= 768) {
+    canvasWidth = 425;
+    canvasHeight = 425;
+    fontsize = 16;
+    rad = 165;
+  } else if (window.innerWidth <= 1024) {
+    canvasWidth = 385;
+    canvasHeight = 385;
+    fontsize = 12;
+    rad = 140;
+  } else {
+    canvasWidth = 385;
+    canvasHeight = 385;
+    fontsize = 12;
+    rad = 140;
+  }
 
   const {
     width = canvasWidth,
