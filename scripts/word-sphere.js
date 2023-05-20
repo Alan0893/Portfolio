@@ -4,11 +4,24 @@
  */
 function wordSphere(canvas, texts, counts, options) {
   const π = Math.PI; // happy math!
+  // Determine the device's screen size
+  const isSmallDevice = window.innerWidth < 900;
+
+  // Adjust the canvas dimensions
+  const canvasWidth = isSmallDevice ? 300 : 500;
+  const canvasHeight = isSmallDevice ? 300 : 500;
+
+  // Modify the font size
+  const fontsize = isSmallDevice ? 10 : 16;
+
+  // Modify the radius
+  const rad = isSmallDevice ? 100 : 150;
+
   const {
-    width = 500,
-    height = 500,
-    radius = 150,
-    fontSize = 20,
+    width = canvasWidth,
+    height = canvasHeight,
+    radius = rad,
+    fontSize = fontsize,
     tilt = 0,
     initialVelocityX = 0,
     initialVelocityY = 0,
@@ -16,8 +29,10 @@ function wordSphere(canvas, texts, counts, options) {
     initialRotationZ = 0,
   } = options;
 
-  let vx = initialVelocityX,vy = initialVelocityY;
-  let rx = initialRotationX,rz = initialRotationZ;
+  let vx = initialVelocityX,
+    vy = initialVelocityY;
+  let rx = initialRotationX,
+    rz = initialRotationZ;
 
   // canvas setup
   let ctx = canvas.getContext("2d");
@@ -86,10 +101,10 @@ function wordSphere(canvas, texts, counts, options) {
       // convert to cartesian and then draw.
       const alpha = 0.6 + 0.4 * (x / radius);
       const size = fontSize + 2 + 5 * (x / radius);
-      if(localStorage.getItem("theme") == "theme-dark") {
+      if (localStorage.getItem("theme") == "theme-dark") {
         ctx.fillStyle = "rgb(146, 182, 255)";
       } else {
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = "black";
       }
       ctx.font = `${size}px "Aspekta"`;
       ctx.fillText(text, y + width / 2, -z + height / 2);
