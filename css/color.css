@@ -35,6 +35,8 @@
 	--about-content-info-list-li-strong: rgb(3, 3, 3);
 	--about-content-info-list-li-span: rgb(119, 119, 119);
 	--about-content-info-list-li-span-a-hover: rgb(3, 3, 3);
+	--copyMessage: #000;
+	--copyMessage-after: rgb(131, 180, 180, 0.4); 
 	/* Resume */
 	--resume-background: rgb(231, 229, 228);
 	--resume-wrap-before: rgba(143, 143, 143, 0.5);
@@ -135,6 +137,8 @@
 	--about-content-info-list-li-strong: rgb(252, 252, 252);
 	--about-content-info-list-li-span: rgb(136, 136, 136);
 	--about-content-info-list-li-span-a-hover: rgb(252, 252, 252);
+	--copyMessage: #fff;
+	--copyMessage-after: rgb(76, 139, 245, 0.4); 
 	/* Resume */
 	--resume-background: rgb(24, 26, 27);
 	--resume-wrap-before: rgba(255, 255, 255, 0.5);
