@@ -65,6 +65,11 @@
 	.projects #proj2 img  {
 		height: 80%;
 	}
+	/* PROJECT 1 */
+	.projects #proj1 img  {
+		margin-top: 20px;
+		height: 70%;
+	}
 
 	.resume .work-wrap::before,
 	.resume .vol-wrap::before,
@@ -161,5 +166,11 @@
 	.resume .vol-content,
 	.resume .edu-content {
 		padding-left: 5.5rem;
+	}
+
+	/* PROJECT 1 */
+	.projects #proj1 img  {
+		margin-top: 20px;
+		height: 40%;
 	}
 }
