@@ -60,6 +60,11 @@
 }
 
 @keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 50%; opacity: 1}
+  from { top: -300px; opacity: 0 }
+  to { top: 50%; opacity: 1 }
+}
+
+@keyframes animateout {
+	from { top: 50%; opacity: 1 }
+	to { top: -50%; opacity: 0; }
 }
