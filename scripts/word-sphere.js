@@ -96,6 +96,31 @@ function wordSphere(canvas, texts, counts, options) {
   canvas.addEventListener("mouseup", (e) => (clicked = false));
   canvas.addEventListener("mouseleave", (e) => (clicked = false));
 
+  // mobile device touch
+  canvas.addEventListener("touchstart", (event) => {
+    clicked = true;
+    lastX = event.touches[0].screenX;
+    lastY = event.touches[0].screenY;
+  });
+  canvas.addEventListener("touchmove", (event) => {
+    if (!clicked) return;
+    [dx, dy] = [event.touches[0].screenX - lastX, event.touches[0].screenY - lastY];
+    [lastX, lastY] = [event.touches[0].screenX, event.touches[0].screenY];
+
+    // rotation update
+    rz += -dy * 0.01;
+    rx += dx * 0.01;
+
+    // velocity update
+    vx = dx * 0.1;
+    vy = dy * 0.1;
+
+    if (!looping) startLoop();
+  });
+  canvas.addEventListener("touchend", (event) => { clicked = false; });
+  canvas.addEventListener("touchcancel", (event) => { clicked = false; });
+
+
   function rot(x, y, t) {
     return [
       x * Math.cos(t) - y * Math.sin(t),
