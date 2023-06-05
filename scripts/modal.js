@@ -10,6 +10,14 @@ projs.forEach(p => {
     let num = (p.id).replace("proj", "")
     const currModal = document.getElementById("modal-" + num);
     
+    /**
+     * Scaling the image
+     */
+    const image = currModal.querySelector(".img-container img");
+    if(window.innerWidth >= 800) {
+      image.style.height = "200px"
+    }
+    
     currModal.style.display = "block"
     addBlur();
     body.classList.add("modal-open");
