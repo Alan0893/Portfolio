@@ -8,20 +8,20 @@
 	/* General */
 	--body-background: rgb(229, 228, 231);
 	/* Buttons & Toggles */
-	--button-background: rgb(155, 214, 214);
+	--button-background: #6edce0;
 	--button: rgb(0, 0, 0);
-	--button-hover: rgb(194, 190, 186);
+	--button-hover: rgb(216, 216, 216);
 	/*==================================================
 		LAYOUT.CSS	
 	/*==================================================*/
 	/* General */
-	--subhead: rgb(131, 180, 180);
+	--subhead: rgb(31, 176, 176);
 	--heading: rgb(45, 45, 45);
 	/* Header */
 	--header-background: rgb(233, 235, 234) url(https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610101987058-3PFR3HTAHFFDZKI67A8X/11.jpg) no-repeat center center;
 	--header-name: black;
 	--header-text-shadow: 0px 1px 3px rgba(255, 255, 255, .8);
-	--header-role: rgb(155, 214, 214);
+	--header-role: rgb(110, 220, 224);
 	--header-role-text-shadow: 0px 1px 3px rgba(255, 255, 255, .3);
 	/* Navigation */
 	--nav-wrap-background: rgb(190, 190, 190);
@@ -30,17 +30,17 @@
 	/* About */
 	--about-background: rgb(251, 244, 239);
 	--about-content-p: rgb(82, 82, 82);
-	--about-content: rgb(155, 214, 214);
+	--about-content: rgb(110, 220, 224);
 	--about-content-info-list-li: rgb(0, 0, 0);
 	--about-content-info-list-li-strong: rgb(3, 3, 3);
 	--about-content-info-list-li-span: rgb(119, 119, 119);
 	--about-content-info-list-li-span-a-hover: rgb(3, 3, 3);
 	--copyMessage: #000;
-	--copyMessage-after: rgb(131, 180, 180, 0.4); 
+	--copyMessage-after: rgb(31, 176, 176, 0.4); 
 	/* Resume */
 	--resume-background: rgb(231, 229, 228);
 	--resume-wrap-before: rgba(143, 143, 143, 0.5);
-	--resume-header-h3: rgb(71, 203, 155);
+	--resume-header-h3: rgb(0, 187, 118);
 	--resume-header-p: rgb(82, 82, 82);
 	--resume-content-h4: rgb(45, 45, 45);
 	--resume-content-ul-b: rgb(55, 55, 55);
@@ -51,7 +51,7 @@
 	--projects-leftbox-hover-shadow: rgba(49, 216, 216, 0.4) -5px 5px, rgba(49, 216, 216, 0.3) -10px 10px, rgba(49, 216, 216, 0.2) -15px 15px, rgba(49, 216, 216, 0.1) -20px 20px;
 	--projects-midbox-hover-shadow: rgba(49, 216, 216, 0.4) 0px 5px, rgba(49, 216, 216, 0.3) 0px 10px, rgba(49, 216, 216, 0.2) 0px 15px, rgba(49, 216, 216, 0.1) 0px 20px, rgba(49, 216, 216, 0.05) 0px 25px;
 	--projects-rightbox-hover-shadow: rgba(49, 216, 216, 0.4) 5px 5px, rgba(49, 216, 216, 0.3) 10px 10px, rgba(49, 216, 216, 0.2) 15px 15px, rgba(49, 216, 216, 0.1) 20px 20px, rgba(49, 216, 216, 0.05) 25px 25px;
-	--modal-img-container: aquamarine;
+	--modal-img-container: rgb(190, 255, 233);
 	--modal-description-box: rgb(232, 232, 232);
 	--modal-description-box-h4: black;
 	--modal-description-box-p: rgb(85, 85, 85);
@@ -77,7 +77,7 @@
 	/* Resume */
 	--resume-icon-background: rgb(206, 206, 206);
 	--resume-icon: rgb(0,0,0);
-	--resume-current: rgb(71, 203, 155);
+	--resume-current: rgb(0, 187, 118);
 	/* Projects */
 	--projects-box-li-a: rgb(1, 171, 171);
 	--projects-box-li-a-hover: rgb(0, 212, 212);
@@ -153,7 +153,7 @@
 	--projects-leftbox-hover-shadow: rgba(76, 139, 245, 0.4) -5px 5px, rgba(76, 139, 245, 0.3) -10px 10px, rgba(76, 139, 245, 0.2) -15px 15px, rgba(76, 139, 245, 0.1) -20px 20px;
 	--projects-midbox-hover-shadow: rgba(76, 139, 245, 0.4) 0px 5px, rgba(76, 139, 245, 0.3) 0px 10px, rgba(76, 139, 245, 0.2) 0px 15px, rgba(76, 139, 245, 0.1) 0px 20px, rgba(76, 139, 245, 0.05) 0px 25px;
 	--projects-rightbox-hover-shadow: rgba(76, 139, 245, 0.4) 5px 5px, rgba(76, 139, 245, 0.3) 10px 10px, rgba(76, 139, 245, 0.2) 15px 15px, rgba(76, 139, 245, 0.1) 20px 20px, rgba(76, 139, 245, 0.05) 25px 25px;
-	--modal-img-container: aquamarine;
+	--modal-img-container: rgb(127, 255, 212);
 	--modal-description-box: rgb(44, 44, 44);
 	--modal-description-box-h4: white;
 	--modal-description-box-p: rgb(170, 170, 170);
@@ -200,5 +200,4 @@
 	--theme: rgb(70, 70, 70);
 	--theme-i: rgb(119, 119, 119);
 	--theme-i-hover: #C0C0C0;
-	
 }
