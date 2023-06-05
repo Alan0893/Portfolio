@@ -153,7 +153,7 @@ function wordSphere(canvas, texts, counts, options) {
       if (localStorage.getItem("theme") == "theme-dark") {
         ctx.fillStyle = "rgb(146, 182, 255)";
       } else {
-        ctx.fillStyle = "rgb(110, 220, 224)";
+        ctx.fillStyle = "rgb(59, 190, 195)";
       }
       ctx.font = `${size}px "Aspekta"`;
       ctx.fillText(text, y + width / 2, -z + height / 2);
